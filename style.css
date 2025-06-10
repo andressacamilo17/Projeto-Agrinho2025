@@ -1,5 +1,5 @@
 
-  /* General Reset and Typography */
+  
   * {
     box-sizing: border-box;
   }
@@ -12,7 +12,7 @@
     user-select: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    scroll-padding-top: 60px; /* To offset fixed header on anchor scroll */
+    scroll-padding-top: 60px; 
   }
   h1, h2, h3 {
     font-weight: 700;
@@ -37,13 +37,13 @@
     padding: 0 0.5rem;
     font-size: 1rem;
   }
-  /* Container for all content */
+ 
   .container {
     max-width: 350px;
     margin: 0 auto 3rem;
     padding: 0 10px;
   }
-  /* Section containers */
+ 
   section {
     background: rgba(255,255,255,0.85);
     margin-bottom: 2rem;
@@ -51,7 +51,7 @@
     padding: 1rem 1rem 2rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
-  /* HEADER */
+ 
 header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -114,7 +114,7 @@ header {
     height: 20px;
     fill: currentColor;
   }
-  /* Interactive Map styles */
+  
   #map-section {
     position: relative;
     height: 280px;
@@ -172,7 +172,7 @@ header {
   .tooltip.visible {
     opacity: 1;
   }
- /* Multimedia Gallery styles */
+
  #gallery {
     display: flex;
     overflow-x: auto;
@@ -215,7 +215,7 @@ header {
     padding: 0.3rem 0;
     font-weight: 600;
   }
-  /* Timeline Styles */
+ 
   #timeline {
     position: relative;
     overflow-x: auto;
@@ -251,7 +251,7 @@ header {
   .timeline-item p {
     font-size: 0.9rem;
   }
-  /* Recipes Section */
+ 
   #recipes {
     display: flex;
     flex-direction: column;
@@ -272,7 +272,7 @@ header {
   .timeline-item p {
     font-size: 0.9rem;
   }
-  /* Recipes Section */
+  
   #recipes {
     display: flex;
     flex-direction: column;
@@ -291,7 +291,7 @@ header {
     margin-bottom: 0.3rem;
     color: #35692d;
   }
-  /* Conclusion styles */
+  
   #conclusion {
     text-align: center;
     padding: 0 0.5rem 1rem;
@@ -306,7 +306,7 @@ header {
   #conclusion a:hover, #conclusion a:focus {
     text-decoration: underline;
   }
- /* Footer styles */
+
  footer {
     background: #2f4f2f;
     color: #d4e157;
@@ -317,7 +317,7 @@ header {
     box-shadow: 0 -3px 8px rgba(0,0,0,0.15);
     user-select: none;
   }
-  /* Responsive adjustments */
+  
   @media (max-width: 360px) {
     h1 {
       font-size: 1.5rem;

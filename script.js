@@ -1,5 +1,5 @@
 (function(){
-    // Tooltip for map points
+    
     const map = document.getElementById('map');
     const tooltip = document.getElementById('tooltip');
     let activePoint = null;
@@ -50,7 +50,7 @@
           hideTooltip(activePoint);
         }
       });
-      // Navigation button scroll handlers
+      
       const navButtons = document.querySelectorAll('.nav-btn');
       navButtons.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -58,7 +58,7 @@
           const targetEl = document.getElementById(targetId);
           if(targetEl){
             targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            // Focus landmark after scroll
+          
             setTimeout(() => targetEl.focus({preventScroll:true}), 500);
           }
         });
