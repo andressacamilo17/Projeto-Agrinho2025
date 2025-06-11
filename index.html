@@ -1,201 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festejando Conexão Campo Cidade</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Festejando a conexão campo-cidade</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <header role="banner" aria-label="Navegação principal">
-        <div class="header-left" aria-label="Marca CREP">CREP</div>
-     <img src="img/images (1)." alt="imagem logo-crep">
-        <div class="header-center" aria-label="Título da página">Festejando Conexão Campo Cidade</div>
-        <nav class="header-right" role="navigation" aria-label="Links de navegação das seções da página">
-          <button class="nav-btn" aria-label="Ir para mapa interativo" data-target="map-section" tabindex="0" title="Mapa Interativo" type="button">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.49-2.91 6.57-5 9.88C9.77 15 7 11.49 7 9z"></path><circle cx="12" cy="9" r="2.5"></circle></svg>
-          </button>
-          <button class="nav-btn" aria-label="Ir para galeria multimídia" data-target="gallery" tabindex="0" title="Galeria Multimídia" type="button">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2zM9 9l2.5 3.01L14 9l4 5H6z"></path></svg>
-          </button>
-          <button class="nav-btn" aria-label="Ir para linha do tempo" data-target="timeline" tabindex="0" title="Linha do Tempo" type="button">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17 2v2h-2l-3 7 1.5 1L19 4h2v2zM7 20l-1.44-.56L3 22v-2H1l2-9h4l3 2-3 5 1.5 1z"></path></svg>
-          </button>
-          <button class="nav-btn" aria-label="Ir para receitas e sabores" data-target="recipes" tabindex="0" title="Receitas e Sabores" type="button">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7v6.5a2.5 2.5 0 0 1-2.5 2.5H10v-2h5.5a.5.5 0 0 0 .5-.5V9a5 5 0 0 0-5-5H6v3H4V5a2 2 0 0 1 2-2z"></path></svg>
-          </button>
-          <button class="nav-btn" aria-label="Ir para conclusão final" data-target="conclusion" tabindex="0" title="Conclusão" type="button">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9A9.01 9.01 0 0 0 12 3zm1 13h-2v-2h2zm0-4h-2V7h2z"></path></svg>
-          </button>
-        </nav>
-      </header>
-
-      <div class="container" role="main">
-       
-        <section id="map-section" aria-label="Mapa interativo de produtos do campo">
-          <h2>Mapa Interativo: Produtos do Campo</h2>
-          <div id="map" role="img" aria-describedby="map-desc" tabindex="0">
-            <span id="map-desc" class="sr-only">Mapa mostrando localização de produtos típicos do campo, cada marcador pode ser selecionado para detalhes.</span>
-            
-            <button class="map-point" style="top:20%; left:30%;" aria-describedby="tooltip-frutas" tabindex="0" data-name="Frutas Frescas" data-desc="Frutas frescas colhidas diretamente do campo: maçã, pera, morango." aria-haspopup="true" aria-expanded="false" title="Frutas Frescas">
-              <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=64&q=80" alt="Frutas frescas, maçã, pera e morango" />
-            </button>
-            <button class="map-point" style="top:40%; left:60%;" aria-describedby="tooltip-queijos" tabindex="0" data-name="Queijos Artesanais" data-desc="Queijos feitos com leite fresco das fazendas locais." aria-haspopup="true" aria-expanded="false" title="Queijos Artesanais">
-              <img src="https://images.unsplash.com/photo-1544025162-8bd852b23b41?auto=format&fit=crop&w=64&q=80" alt="Queijos artesanais" />
-            </button>
-            <button class="map-point" style="top:65%; left:45%;" aria-describedby="tooltip-mel" tabindex="0" data-name="Mel Puro" data-desc="Mel natural das abelhas criadas no campo." aria-haspopup="true" aria-expanded="false" title="Mel Puro">
-              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=64&q=80" alt="Pote com mel puro" />
-            </button>
-            <button class="map-point" style="top:55%; left:75%;" aria-describedby="tooltip-verduras" tabindex="0" data-name="Verduras Orgânicas" data-desc="Verduras cultivadas sem agrotóxicos, direto da horta." aria-haspopup="true" aria-expanded="false" title="Verduras Orgânicas">
-              <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=64&q=80&h=64&auto=format&fit=crop" alt="Verduras frescas orgânicas" />
-            </button>
-            <div id="tooltip" class="tooltip" role="tooltip" aria-live="polite"></div>
-          </div>
-        </section>
-        <section id="gallery" aria-label="Galeria multimídia de tradições e festas">
-            <h2>Galeria Multimídia: Tradições e Festas</h2>
-            <div id="gallery-list" tabindex="0" aria-roledescription="slider" aria-label="Galeria rolável de imagens e vídeos das tradições e festas" style="display:flex;overflow-x:auto; border-radius:12px; scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;">
-              <div class="gallery-item" tabindex="0" style="flex: 0 0 80%; margin-right:10px; scroll-snap-align:center; border-radius:12px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.15); background:#fff; position:relative;">
-                <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=400&q=80" alt="Festa típica com dança tradicional" style="width: 100%; height:auto; border-radius: 12px;" />
-                <div class="gallery-caption" style="position:absolute; bottom:0; background:rgba(47,79,47,0.75); color:#e6f2d1; width:100%; text-align:center; font-size:1rem; padding:0.3rem 0; font-weight:600;">Dança tradicional do campo</div>
-              </div>
-              <div class="gallery-item" tabindex="0" style="flex: 0 0 80%; margin-right:10px; scroll-snap-align:center; border-radius:12px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.15); background:#fff; position:relative;">
-                <video controls preload="metadata" aria-label="Vídeo de festa junina com música e fogueira" muted style="width:100%; border-radius: 12px;">
-                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
-                  Seu navegador não suporta vídeo.
-                </video>
-                <div class="gallery-caption" style="position:absolute; bottom:0; background:rgba(47,79,47,0.75); color:#e6f2d1; width:100%; text-align:center; font-size:1rem; padding:0.3rem 0; font-weight:600;">Festa junina com música e fogueira</div>
-              </div>
-              <div class="gallery-item" tabindex="0" style="flex: 0 0 80%; margin-right:10px; scroll-snap-align:center; border-radius:12px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.15); background:#fff; position:relative;">
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Comunidade reunida em festa rural" style="width: 100%; height:auto; border-radius: 12px;" />
-                <div class="gallery-caption" style="position:absolute; bottom:0; background:rgba(47,79,47,0.75); color:#e6f2d1; width:100%; text-align:center; font-size:1rem; padding:0.3rem 0; font-weight:600;">Celebração comunitária no campo</div>
-              </div>
-            </div>
-          </section>
-
-          <section id="timeline" aria-label="Linha do tempo da conexão campo cidade">
-            <h2>Linha do Tempo: Conexão Campo Cidade</h2>
-            <div tabindex="0" aria-roledescription="carousel" aria-label="Linha do tempo horizontal" style="position:relative; overflow-x:auto; background:#dae9bb; border-radius:12px; padding:1rem 0.5rem; display:flex; gap:1rem; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;">
-              <article tabindex="0" role="group" aria-label="Ano 1900 - Primeiro contato" style="background:#4caf50; color:#e6f2d1; min-width:160px; padding:0.8rem 1rem; border-radius:12px; scroll-snap-align:start; box-shadow:0 3px 8px rgba(0,0,0,0.1); user-select:none;">
-                <h3>1900</h3>
-                <p>Início do transporte de produtos do campo à cidade por carroças.</p>
-              </article>
-              <article tabindex="0" role="group" aria-label="Ano 1950 - Expansão das feiras livres" style="background:#4caf50; color:#e6f2d1; min-width:160px; padding:0.8rem 1rem; border-radius:12px; scroll-snap-align:start; box-shadow:0 3px 8px rgba(0,0,0,0.1); user-select:none;">
-                <h3>1950</h3>
-                <p>Feiras livres começam a ser organizadas regularmente nas cidades.</p>
-              </article>
-              <article tabindex="0" role="group" aria-label="Ano 1980 - Popularização das festas tradicionais" style="background:#4caf50; color:#e6f2d1; min-width:160px; padding:0.8rem 1rem; border-radius:12px; scroll-snap-align:start; box-shadow:0 3px 8px rgba(0,0,0,0.1); user-select:none;">
-                <h3>1980</h3>
-                <p>Festas e eventos tradicionais ganham popularidade urbana.</p>
-              </article>
-              <article tabindex="0" role="group" aria-label="Ano 2010 - Valorização dos produtos orgânicos" style="background:#4caf50; color:#e6f2d1; min-width:160px; padding:0.8rem 1rem; border-radius:12px; scroll-snap-align:start; box-shadow:0 3px 8px rgba(0,0,0,0.1); user-select:none;">
-                <h3>2010</h3>
-                <p>Cresce o interesse por produtos orgânicos e artesanais do campo.</p>
-              </article>
-              <article tabindex="0" role="group" aria-label="Ano 2020 - Conexão digital" style="background:#4caf50; color:#e6f2d1; min-width:160px; padding:0.8rem 1rem; border-radius:12px; scroll-snap-align:start; box-shadow:0 3px 8px rgba(0,0,0,0.1); user-select:none;">
-                <h3>2020</h3>
-                <p>A conexão campo-cidade se expande pelo comércio digital e redes sociais.</p>
-              </article>
-            </div>
-          </section>
-          <section id="recipes" aria-label="Receitas e sabores do campo na mesa da cidade">
-            <h2>Receitas e Sabores: Do Campo na Mesa da Cidade</h2>
-            <article class="recipe" tabindex="0" role="group" aria-label="Receita - Sopa de Legumes">
-              <div class="recipe-header">
-                <img src="https://images.unsplash.com/photo-1612197520193-08e32debaf0b?auto=format&fit=crop&w=290&q=80" alt="Sopa de legumes" />
-                <div class="recipe-content">
-                  <h3>Sopa de Legumes Frescos</h3>
-                  <p class="description">Uma receita clássica com legumes orgânicos do campo, ideal para dias fresquinhos na cidade.</p>
-                  <div class="ingredients">
-                    <strong>Ingredientes:</strong>
-                    <ul>
-                      <li>2 batatas médias</li>
-                      <li>2 cenouras</li>
-                      <li>1 abobrinha</li>
-                      <li>1 cebola média</li>
-                      <li>2 dentes de alho</li>
-                      <li>Sal e pimenta a gosto</li>
-                      <li>1 litro de caldo de legumes</li>
-                      <li>Azeite de oliva</li>
-                    </ul>
-                  </div>
-                  <div class="preparation">
-                    <strong>Modo de Preparo:</strong>
-                    <p>Refogue cebola e alho no azeite até dourar. Adicione os legumes picados e misture. Acrescente o caldo de legumes, tempere com sal e pimenta, cozinhe até os legumes estarem macios. Sirva quente.</p>
-                  </div>
-                </div>
-              </div>
-            </article>
-            
-            <article class="recipe" tabindex="0" role="group" aria-label="Receita - Pão Caseiro">
-                <div class="recipe-header">
-                  <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=290&q=80" alt="Pão caseiro" />
-                  <div class="recipe-content">
-                    <h3>Pão Caseiro Tradicional</h3>
-                    <p class="description">Pão feito com farinha artesanal e fermento natural, símbolo da conexão do campo com a mesa urbana.</p>
-                    <div class="ingredients">
-                      <strong>Ingredientes:</strong>
-                      <ul>
-                        <li>500g de farinha de trigo</li>
-                        <li>300ml de água morna</li>
-                        <li>10g de fermento biológico seco</li>
-                        <li>10g de sal</li>
-                        <li>15ml de azeite de oliva</li>
-                      </ul>
-                    </div>
-                    <div class="preparation">
-                      <strong>Modo de Preparo:</strong>
-                      <p>Misture a farinha, o sal e o fermento. Acrescente a água e o azeite, sovando até formar uma massa lisa. Deixe descansar até dobrar de volume. Modele o pão e asse em forno pré-aquecido a 200°C por 35-40 minutos.</p>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="recipe" tabindex="0" role="group" aria-label="Receita - Doce de Leite Regional">
-                <div class="recipe-header">
-                  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=290&q=80" alt="Doce de leite" />
-                  <div class="recipe-content">
-                    <h3>Doce de Leite Regional</h3>
-                    <p class="description">Doce tradicional feito por produtores rurais, apreciado nas festas e reuniões na cidade.</p>
-                    <div class="ingredients">
-                      <strong>Ingredientes:</strong>
-                      <ul>
-                        <li>1 litro de leite integral</li>
-                        <li>300g de açúcar</li>
-                        <li>1/2 colher de chá de bicarbonato de sódio</li>
-                      </ul>
-                    </div>
-                    <div class="preparation">
-                      <strong>Modo de Preparo:</strong>
-                      <p>Em panela, misture o leite, açúcar e bicarbonato. Cozinhe em fogo baixo, mexendo sempre, até engrossar e adquirir cor caramelo. Despeje em potes e deixe esfriar antes de servir.</p>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </section>
-
-        </div>
+<body class="bg-green-50 min-h-screen flex flex-col">
+  <!-- Cabeçalho -->
+  <header class="bg-green-700 text-white flex items-center justify-between px-4 py-3 max-w-4xl mx-auto w-full shadow-md">
+    <img src="img/images (1).jpeg"
+      alt="Logo do Colégio Rural Estadual de Pinhalzinho - EFM, em formato circular com árvore"
+      class="w-12 h-12 logo-rounded"
+      height="48"
+      src="https://storage.googleapis.com/a1aa/image/3a0e34bb-9cb7-40da-5cf9-bef8b88fbbbc.jpg"
+      width="48"
+    />
+    <div class="text-center">
+      <p class="text-lg font-semibold">Festejando a conexão campo-cidade</p>
+      <p class="text-xs mt-1 font-light">
+        Andressa Aparecida de O. Camilo<br />
+        Colégio Rural Estadual de Pinhalzinho - EFM
+      </p>
     </div>
-  </div>
-</article>
-</section>
-<section id="conclusion" aria-label="Conclusão sobre a conexão campo cidade">
-<h2>Conclusão</h2>
-<p>
-  Celebrar a conexão entre campo e cidade fortalece nossa cultura, gastronomia e tradições. Essa ligação promove sustentabilidade e valorização dos produtos locais.
-</p>
-<p>Saiba mais e explore essas riquezas em:</p>
-<p>
-  <a href="https://pt.wikipedia.org/wiki/Campo" target="_blank" rel="noopener noreferrer">Informações sobre o Campo</a> |
-  <a href="https://pt.wikipedia.org/wiki/Cidade" target="_blank" rel="noopener noreferrer">Informações sobre as Cidades</a> |
-  <a href="https://www.agricultura.gov.br/" target="_blank" rel="noopener noreferrer">Ministério da Agricultura</a>
-</p>
-</section>
-</div>
-<footer role="contentinfo">
-    © 2025 Festejando Conexão Campo Cidade. Todos os direitos reservados.
+    <img src="img/imagem.png"
+      alt="Logo do Agrinho com crianças e texto"
+      class="w-12 h-12 logo-rounded"
+      height="48"
+      src="https://storage.googleapis.com/a1aa/image/706912db-8414-4694-dd71-2e2bd182dc09.jpg"
+      width="48"
+    />
+  </header>
+
+  <!-- Barra de navegação -->
+  <nav class="bg-green-800 text-white max-w-4xl mx-auto w-full flex justify-around py-2 px-4 space-x-2 shadow-md text-xs font-semibold">
+    <a href="#pagina-inicial" class="flex-grow text-center py-1 rounded-md hover:bg-green-700 transition">Início</a>
+    <a href="#mapa-produtos" class="flex-grow text-center py-1 rounded-md hover:bg-green-700 transition">Mapa Interativo</a>
+    <a href="#galeria" class="flex-grow text-center py-1 rounded-md hover:bg-green-700 transition">Galeria</a>
+    <a href="#linha-do-tempo" class="flex-grow text-center py-1 rounded-md hover:bg-green-700 transition">Linha do Tempo</a>
+    <a href="#receitas" class="flex-grow text-center py-1 rounded-md hover:bg-green-700 transition">Receitas</a>
+  </nav>
+
+  <main class="flex-grow max-w-4xl mx-auto w-full px-6 py-8 space-y-10">
+    <section id="pagina-inicial" class="bg-white rounded-lg shadow-lg p-6 mb-10">
+      <h2 class="text-green-700 font-bold text-2xl mb-4 text-center">Página Inicial</h2>
+      <p class="text-center text-green-800 text-lg font-light">
+        Bem-vindo ao projeto "Festejando a conexão campo-cidade". Explore as seções para conhecer mais sobre nossa cultura, tradições e produtos.
+      </p>
+    </section>
+
+    <section id="mapa-produtos" class="bg-white rounded-lg shadow-lg p-6 mb-10">
+      <h2 class="text-green-700 font-bold text-2xl mb-4 text-center">Mapa Interativo de Produtos do Campo</h2>
+      <p class="text-center text-green-800 mb-6 font-light">
+        Clique nos ícones para saber mais sobre os produtos agrícolas da região.
+      </p>
+      <div class="relative w-full h-64 rounded overflow-hidden shadow-md">
+        <img
+          alt="Mapa ilustrativo da região agrícola com ícones de produtos"
+          class="w-full h-full object-cover"
+          height="256"
+          loading="lazy"
+          src="https://storage.googleapis.com/a1aa/image/9b3765af-3604-480c-28a2-49a65dcb7808.jpg"
+          width="600"
+        />
+        <button aria-label="Milho" class="absolute top-20 left-20 bg-yellow-400 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-yellow-500 transition text-xl" onclick="showInfo('Milho', 'Produto muito cultivado na região, usado para alimentação e indústria.')" type="button">🌽</button>
+        <button aria-label="Feijão" class="absolute top-32 left-40 bg-red-600 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-red-700 transition text-xl" onclick="showInfo('Feijão', 'Cultivado em diversas variedades, alimento básico da população.')" type="button">🫘</button>
+        <button aria-label="Frutas" class="absolute top-12 left-60 bg-green-500 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-green-600 transition text-xl" onclick="showInfo('Frutas', 'Diversas frutas cultivadas, como banana, laranja e abacaxi.')" type="button">🍍</button>
+        <button aria-label="Tomate" class="absolute top-40 left-72 bg-red-500 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-red-600 transition text-xl" onclick="showInfo('Tomate', 'Cultivado em hortas locais, ingrediente essencial na culinária.')" type="button">🍅</button>
+        <button aria-label="Cenoura" class="absolute top-52 left-24 bg-orange-400 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500 transition text-xl" onclick="showInfo('Cenoura', 'Rica em vitaminas, cultivada em pequenas propriedades rurais.')" type="button">🥕</button>
+        <button aria-label="Abacaxi" class="absolute top-16 left-80 bg-yellow-300 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-yellow-400 transition text-xl" onclick="showInfo('Abacaxi', 'Fruta tropical cultivada em áreas específicas da região.')" type="button">🍍</button>
+      </div>
+    </section>
+
+    <section id="galeria" class="bg-white rounded-lg shadow-lg p-6 mb-10">
+      <h2 class="text-green-700 font-bold text-2xl mb-4 text-center">Galeria</h2>
+      <p class="text-center text-green-800 mb-6 font-light">Fotos das festas tradicionais do campo e da cidade.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <img alt="Foto da festa junina com pessoas dançando e decoração típica" class="rounded shadow" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/20019585-96b6-42ed-12d4-b27ec34fcb94.jpg" width="150" />
+        <img alt="Foto da festa do colono com comidas típicas e pessoas reunidas" class="rounded shadow" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/f21cb6b7-5369-45df-67e3-452c278fd69c.jpg" width="150" />
+        <img alt="Foto da festa da colheita com frutas e legumes expostos" class="rounded shadow" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/14d63db0-6d72-4ffc-1f61-67788c4add6a.jpg" width="150" />
+        <img alt="Foto da festa religiosa com procissão e decoração" class="rounded shadow" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/427979dd-4bea-415d-fd8c-787011d0337d.jpg" width="150" />
+      </div>
+    </section>
+
+    <section id="linha-do-tempo" class="bg-white rounded-lg shadow-lg p-6 mb-10">
+      <h2 class="text-green-700 font-bold text-2xl mb-4 text-center">Linha do Tempo</h2>
+      <p class="text-center text-green-800 mb-6 font-light">Evolução da agricultura e cultura local.</p>
+      <div class="flex justify-between text-green-700 font-semibold text-sm">
+        <div class="flex flex-col items-center space-y-1 max-w-[70px]">
+          <span class="bg-green-300 rounded-full w-10 h-10 flex items-center justify-center font-bold">XIX</span>
+          <p class="text-center text-xs">Século XIX: Início da colonização e agricultura tradicional.</p>
+        </div>
+        <div class="flex flex-col items-center space-y-1 max-w-[70px]">
+          <span class="bg-green-400 rounded-full w-10 h-10 flex items-center justify-center font-bold">XX</span>
+          <p class="text-center text-xs">Século XX: Modernização e expansão agrícola.</p>
+        </div>
+        <div class="flex flex-col items-center space-y-1 max-w-[70px]">
+          <span class="bg-green-500 rounded-full w-10 h-10 flex items-center justify-center font-bold">70-80</span>
+          <p class="text-center text-xs">1970-80: Integração maior entre campo e cidade.</p>
+        </div>
+        <div class="flex flex-col items-center space-y-1 max-w-[70px]">
+          <span class="bg-green-600 rounded-full w-10 h-10 flex items-center justify-center font-bold">XXI</span>
+          <p class="text-center text-xs">Século XXI: Sustentabilidade e tecnologia no campo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="receitas" class="bg-white rounded-lg shadow-lg p-6 mb-10">
+      <h2 class="text-green-700 font-bold text-2xl mb-4 text-center">Receitas</h2>
+      <p class="text-center text-green-800 mb-6 font-light">Receitas típicas do campo e da cidade. Clique nos links para assistir aos vídeos.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-green-100 rounded-lg p-4 flex flex-col items-center shadow-md">
+          <img alt="Foto de pamonha embrulhada em folha de milho" class="rounded mb-3 w-full max-w-xs" height="140" loading="lazy" src="https://storage.googleapis.com/a1aa/image/366838ef-18f3-4b30-7025-e309743db52b.jpg" width="240" />
+          <h3 class="font-semibold text-green-700 mb-1">Pamonha</h3>
+          <p class="text-green-800 text-center text-sm mb-3">Receita feita com milho verde ralado, cozida em folhas de milho.</p>
+          <a href="https://www.youtube.com/watch?v=Q6v6Xq6q6xA" target="_blank" rel="noopener noreferrer" class="text-green-700 font-semibold hover:underline">Assistir vídeo no YouTube</a>
+        </div>
+        <div class="bg-green-100 rounded-lg p-4 flex flex-col items-center shadow-md">
+          <img alt="Foto de bolo de fubá cortado em fatias" class="rounded mb-3 w-full max-w-xs" height="140" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4b5dbad3-50f9-43d5-95bc-c89bc2f9f8a6.jpg" width="240" />
+          <h3 class="font-semibold text-green-700 mb-1">Bolo de Fubá</h3>
+          <p class="text-green-800 text-center text-sm mb-3">Bolo tradicional feito com fubá, muito apreciado em festas.</p>
+          <a href="https://www.youtube.com/watch?v=3v7v7v7v7v7" target="_blank" rel="noopener noreferrer" class="text-green-700 font-semibold hover:underline">Assistir vídeo no YouTube</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-green-800 text-white text-center py-6 mt-auto shadow-inner">
+    <div class="max-w-4xl mx-auto px-4">
+      <p class="text-sm mb-2">Projeto Agrinho - Desenvolvido por Andressa Aparecida de O. Camilo</p>
+      <p class="text-xs opacity-80">&copy; 2024 Colégio Rural Estadual de Pinhalzinho - EFM. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
-
+  <script src="script.js"></script>
 </body>
 </html>
