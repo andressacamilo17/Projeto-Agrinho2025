@@ -1,47 +1,10 @@
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;       
-  margin: 0;                       
-  padding: 20px;                  
+/* Arredondamento personalizado para logos */
+.logo-rounded {
+  border-radius: 50%;
 }
 
-
-header {
-  background-color: #4CAF50;     
-  color: white;                   
-  padding: 15px;                  
-  text-align: center;            
+/* Estilização customizada para o botão ativo, se desejar */
+nav a.active {
+  background-color: #166534; /* verde mais escuro */
+  font-weight: bold;
 }
-
-
-.logo {
-  max-width: 150px;              
-  display: block;                
-  margin: 0 auto;               
-}
-
-
-h1, h2, h3 {
-  color: #333;                   
-  margin-bottom: 10px;            
-}
-
-
-p {
-  line-height: 1.6;       }
-
-  button{
-    background-color: #4CAF50; 
-    border: none;              
-    color: white;           
-    padding: 15px 32px;      
-    text-align: center;       
-    text-decoration: none;    
-    display: inline-block;   
-    font-size: 16px;         
-    margin: 4px 2px;       
-    cursor: pointer;         
-    border-radius: 4px;      
-    transition: background-color 0.3s;
-  }
